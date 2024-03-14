@@ -1,6 +1,6 @@
 main() {
   Media media = Media();
-  Song song = Song('weekend');
+  Song song = Song('The Weekend');
 
   media.play();
   song.play();
@@ -8,7 +8,7 @@ main() {
 
 class Media {
   void play() {
-    print('Playing media');
+    print('Playing media...');
   }
 }
 
@@ -18,6 +18,6 @@ class Song extends Media {
 
   @override
   void play() {
-    print('Playing song by: $artist');
+    print('Playing song by $artist...');
   }
 }
